@@ -1,3 +1,43 @@
+/*
+Light grey: #D6D6D6
+Aureolin: #FFEE32
+Cyber Yellow: #FFD100
+Eerie Black: #202020
+Jet: #333533
+*/
+
+/* Global style
+----------------------------------*/
+body {
+    color: #202020;
+}
 img {
     width: 300px;
+}
+
+/* Profile
+----------------------------------*/
+header {
+    background: #FFD100;
+}
+/* Project
+----------------------------------*/
+.projects {
+    background: #FFEE32;
+}
+/* Work Experience
+----------------------------------*/
+.work-experience {
+    background: #FFD100;
+}
+/* Education
+----------------------------------*/
+.education {
+    background: #FFEE32;
+}
+
+/* COntact info
+----------------------------------*/
+footer {
+    background: #FFD100;
 }
