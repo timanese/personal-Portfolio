@@ -1,9 +1,13 @@
 /*
-Light grey: #D6D6D6
-Aureolin: #FFEE32
-Cyber Yellow: #FFD100
-Eerie Black: #202020
-Jet: #333533
+https://coolors.co/cb997e-ddbea9-ffe8d6-b7b7a4-a5a58d-6b705c
+Beige: #e9f5db
+Tea Green: #CFE1B9
+Laurel Green: #B5C99A
+Asparagus: #97a97c
+Moss Green: #87986A
+Fern Green: #718355
+almost white: #F7FFF7
+
 */
 
 /* Global style
@@ -14,30 +18,37 @@ body {
 img {
     width: 300px;
 }
+a {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+}
+
 
 /* Profile
 ----------------------------------*/
 header {
-    background: #FFD100;
+    background: #CFE1B9;
 }
 /* Project
 ----------------------------------*/
 .projects {
-    background: #FFEE32;
+    background: #87986A;
 }
 /* Work Experience
 ----------------------------------*/
 .work-experience {
-    background: #FFD100;
+    background: #B5C99A;
 }
 /* Education
 ----------------------------------*/
 .education {
-    background: #FFEE32;
+    background: #87986A;
 }
 
 /* COntact info
 ----------------------------------*/
 footer {
-    background: #FFD100;
+    background: #B5C99A;
 }
