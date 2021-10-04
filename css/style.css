@@ -6,6 +6,8 @@ Laurel Green: #B5C99A
 Asparagus: #97a97c
 Moss Green: #87986A
 Fern Green: #718355
+Antique brass: #CB997E
+Desert Sand: DDBEA9
 almost white: #F7FFF7
 
 */
@@ -19,7 +21,7 @@ img {
     width: 300px;
 }
 a {
-    color: white;
+    color: black;
 }
 a:hover {
     text-decoration: none;
@@ -36,8 +38,14 @@ header {
 .projects {
     background: #87986A;
 }
-.projects a {
-    background: #718355;
+.projects .btn {
+    background: #DDBEA9;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.projects .btn:hover {
+    background: rgba(221, 190, 169, 75%);
 }
 /* Work Experience
 ----------------------------------*/
