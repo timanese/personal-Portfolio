@@ -16,6 +16,8 @@ almost white: #F7FFF7
 ----------------------------------*/
 body {
     color: #202020;
+    margin: 0;
+    padding: 0;
 }
 img {
     width: 300px;
@@ -25,6 +27,11 @@ a {
 }
 a:hover {
     text-decoration: none;
+}
+.content-wrap {
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 
