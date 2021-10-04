@@ -29,12 +29,15 @@ a:hover {
 /* Profile
 ----------------------------------*/
 header {
-    background: #CFE1B9;
+    background: #B5C99A;
 }
 /* Project
 ----------------------------------*/
 .projects {
     background: #87986A;
+}
+.projects a {
+    background: #718355;
 }
 /* Work Experience
 ----------------------------------*/
