@@ -28,10 +28,13 @@ a {
 a:hover {
     text-decoration: none;
 }
+h2 {
+    margin: 0;
+}
 .content-wrap {
     width: 900px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 60px 0; /* allowed for the background to fill up screen */
 }
 
 
@@ -50,6 +53,7 @@ header {
     padding: 8px;
     text-decoration: none;
     border-radius: 4px;
+    display: inline-block; /* inline elements dont align vertically when adding padding and margin to it, this allows it */
 }
 .projects .btn:hover {
     background: rgba(221, 190, 169, 75%);
