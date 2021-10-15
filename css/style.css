@@ -67,8 +67,10 @@ header {
 }
 .headshot-item {
     float: right;
-    margin: 70px;
-
+    margin: 40px;
+    border-left: 1px dashed #F7FFF7;  /* this is to add a line to the floated headshot photo, couldve done this differently by splitting the text on the left to a different container */
+    padding: 25px 25px;
+    width: 360px;
 }
 /* Project
 ----------------------------------*/
