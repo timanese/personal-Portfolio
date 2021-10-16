@@ -66,6 +66,13 @@ header {
     background: #B5C99A;
 
 }
+.headshot-item {
+    float: right;
+    margin: 40px;
+    border-left: 1px dashed #F7FFF7;  /* this is to add a line to the floated headshot photo, couldve done this differently by splitting the text on the left to a different container */
+    padding: 25px 25px;
+    width: 360px;
+}
 /* Project
 ----------------------------------*/
 .projects {
@@ -80,6 +87,20 @@ header {
 }
 .projects .btn:hover {
     background: rgba(221, 190, 169, 75%);
+}
+
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #F7FFF7;
+    padding: 25px 0; /* 25px on top and bottom and 0 on the left and right*/
+}
+.project-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0;
 }
 /* Work Experience
 ----------------------------------*/
