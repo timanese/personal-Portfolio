@@ -64,6 +64,7 @@ h1, h2 {
 ----------------------------------*/
 header {
     background: #B5C99A;
+
 }
 /* Project
 ----------------------------------*/
@@ -95,4 +96,17 @@ header {
 ----------------------------------*/
 footer {
     background: #B5C99A;
+    text-align: center;
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+
 }
