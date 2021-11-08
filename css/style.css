@@ -54,9 +54,30 @@ h1, h2 {
     font-weight: 400 /*normal*/
 }
 .content-wrap {
-    width: 900px;
+    max-width: 900px;
+    width: 85%;
     margin: 0 auto;
     padding: 60px 0; /* allowed for the background to fill up screen */
+}
+h3 {
+    margin: 0;
+}
+/*
+These are sibling combinator selectors */
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+/* This is so that everything with the class divider and all the children sections will have a bottom border */
+.divider > section {
+    border-bottom: 1px dashed #F7FFF7;
+    padding: 25px 0; /* 25px on top and bottom and 0 on the left and right*/
+}
+/* This is so that the last element section will not have a border */
+.divider > section:last-of-type {
+    border-bottom: none;
 }
 
 
@@ -78,6 +99,9 @@ header {
 ----------------------------------*/
 .projects {
     background: #87986A;
+    background-image: url(../images/greenbackground3.jpg);
+    background-size: cover;
+    background-position: top right;
 }
 .projects .btn {
     background: #DDBEA9;
@@ -92,8 +116,6 @@ header {
 
 .project-item {
     overflow: hidden;
-    border-bottom: 1px dashed #F7FFF7;
-    padding: 25px 0; /* 25px on top and bottom and 0 on the left and right*/
 }
 .project-item img {
     float: left;
