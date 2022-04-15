@@ -86,22 +86,18 @@ These are sibling combinator selectors */
 header {
     background: #B5C99A;
     text-align: center;
+    background-image: url(../images/Jungle-Vines-PNG-Picture.png);
+    background-size: cover;
+    background-position:fixed;
 
 }
-.headshot-item {
-    float: right;
-    margin: 40px;
-    border-left: 1px dashed #F7FFF7;  /* this is to add a line to the floated headshot photo, couldve done this differently by splitting the text on the left to a different container */
-    padding: 25px 25px;
-    width: 360px;
-}
+
 /* Project
 ----------------------------------*/
 .projects {
     background: #87986A;
-    background-image: url(../images/greenbackground3.jpg);
-    background-size: cover;
-    background-position: top right;
+    
+
 }
 .projects .btn {
     background: #DDBEA9;
@@ -117,11 +113,6 @@ header {
 .project-item {
     overflow: hidden;
 }
-.project-item img {
-    float: left;
-    margin-right: 20px;
-}
-
 .project-item h3 {
     margin-top: 0;
 }
@@ -129,14 +120,8 @@ header {
 ----------------------------------*/
 .work-experience {
     background: #B5C99A;
-}
-/*
-Grid container
-*/
-.job-items {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
+    background-image: url(../images/Jungle-Vines-PNG-Picture.png);
+    background-size: cover;
 }
 /* Education
 ----------------------------------*/
@@ -144,10 +129,13 @@ Grid container
     background: #87986A;
 }
 
-/* COntact info
+/* Contact info
 ----------------------------------*/
 footer {
     background: #B5C99A;
+    background-image: url(../images/Jungle-Vines-PNG-Picture.png);
+    background-size: cover;
+    background-position: top right;
     text-align: center;
 }
 .contact-list{
@@ -161,4 +149,32 @@ footer {
     padding: 15px;
     display: inline-block;
 
+}
+/* Responsive 
+----------------------------------*/
+@media screen and (min-width:750px){
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    /*
+    Grid container
+    */
+    .job-items {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    
+}
+
+@media screen and (min-width:950px)
+{
+    .headshot-item {
+        float: right;
+        margin: 40px;
+        border-left: 1px dashed #F7FFF7;  /* this is to add a line to the floated headshot photo, couldve done this differently by splitting the text on the left to a different container */
+        padding: 25px 25px;
+        width: 360px;
+    }
 }
