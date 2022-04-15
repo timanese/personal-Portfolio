@@ -16,165 +16,158 @@ almost white: #F7FFF7
 ----------------------------------*/
 /* always have this in your base css*/
 html {
-    box-sizing: border-box;
-
+  box-sizing: border-box;
 }
-*, *:before, *:after{
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 /* Always add margin 0 and padding 0 to body in the base css */
 body {
-    color: #202020;
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
+  color: #202020;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 img {
-    width: 300px;
+  width: 300px;
 }
 a {
-    color: black;
+  color: black;
 }
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
-h1{
-    font-size: 100px;
-    line-height: 1.2;
-
+h1 {
+  font-size: 100px;
+  line-height: 1.2;
 }
 h2 {
-    font-size: 45px;
+  font-size: 45px;
 }
-h1, h2 {
-    margin: 0;
-    font-family: 'Zen Loop', cursive;
-    font-weight: 400 /*normal*/
+h1,
+h2 {
+  margin: 0;
+  font-family: "Zen Loop", cursive;
+  font-weight: 400; /*normal*/
 }
 .content-wrap {
-    max-width: 900px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 60px 0; /* allowed for the background to fill up screen */
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0; /* allowed for the background to fill up screen */
 }
 h3 {
-    margin: 0;
+  margin: 0;
 }
 /*
 These are sibling combinator selectors */
 .item-details h3 + p {
-    font-style: italic;
+  font-style: italic;
 }
 .item-details h3 ~ p {
-    margin: 0;
+  margin: 0;
 }
 /* This is so that everything with the class divider and all the children sections will have a bottom border */
 .divider > section {
-    border-bottom: 1px dashed #F7FFF7;
-    padding: 25px 0; /* 25px on top and bottom and 0 on the left and right*/
+  border-bottom: 1px dashed #f7fff7;
+  padding: 25px 0; /* 25px on top and bottom and 0 on the left and right*/
 }
 /* This is so that the last element section will not have a border */
 .divider > section:last-of-type {
-    border-bottom: none;
+  border-bottom: none;
 }
-
 
 /* Profile
 ----------------------------------*/
 header {
-    background: #B5C99A;
-    text-align: center;
-    background-image: url(../images/Jungle-Vines-PNG-Picture.png);
-    background-size: cover;
-    background-position:fixed;
-
+  background: #b5c99a;
+  text-align: center;
+  background-image: url(../images/Jungle-Vines-PNG-Picture.png);
+  background-size: cover;
+  background-position: fixed;
 }
 
 /* Project
 ----------------------------------*/
 .projects {
-    background: #87986A;
-    
-
+  background: #87986a;
 }
 .projects .btn {
-    background: #DDBEA9;
-    padding: 8px;
-    text-decoration: none;
-    border-radius: 4px;
-    display: inline-block; /* inline elements dont align vertically when adding padding and margin to it, this allows it */
+  background: #ddbea9;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block; /* inline elements dont align vertically when adding padding and margin to it, this allows it */
 }
 .projects .btn:hover {
-    background: rgba(221, 190, 169, 75%);
+  background: rgba(221, 190, 169, 75%);
 }
 
 .project-item {
-    overflow: hidden;
+  overflow: hidden;
 }
 .project-item h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 /* Work Experience
 ----------------------------------*/
 .work-experience {
-    background: #B5C99A;
-    background-image: url(../images/Jungle-Vines-PNG-Picture.png);
-    background-size: cover;
+  background: #b5c99a;
+  background-image: url(../images/Jungle-Vines-PNG-Picture.png);
+  background-size: cover;
 }
 /* Education
 ----------------------------------*/
 .education {
-    background: #87986A;
+  background: #87986a;
 }
 
 /* Contact info
 ----------------------------------*/
 footer {
-    background: #B5C99A;
-    background-image: url(../images/Jungle-Vines-PNG-Picture.png);
-    background-size: cover;
-    background-position: top right;
-    text-align: center;
+  background: #b5c99a;
+  background-image: url(../images/Jungle-Vines-PNG-Picture.png);
+  background-size: cover;
+  background-position: top right;
+  text-align: center;
 }
-.contact-list{
-    list-style-type: none;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-
+.contact-list {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
 }
-.contact-list a{
-    padding: 15px;
-    display: inline-block;
-
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
 }
 /* Responsive 
 ----------------------------------*/
-@media screen and (min-width:750px){
-    .project-item img {
-        float: left;
-        margin-right: 20px;
-    }
-    /*
+@media screen and (min-width: 750px) {
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  /*
     Grid container
     */
-    .job-items {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 20px;
-    }
-    
+  .job-items {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
 }
 
-@media screen and (min-width:950px)
-{
-    .headshot-item {
-        float: right;
-        margin: 40px;
-        border-left: 1px dashed #F7FFF7;  /* this is to add a line to the floated headshot photo, couldve done this differently by splitting the text on the left to a different container */
-        padding: 25px 25px;
-        width: 360px;
-    }
+@media screen and (min-width: 950px) {
+  .headshot-item {
+    float: right;
+    margin: 40px;
+    border-left: 1px dashed #f7fff7; /* this is to add a line to the floated headshot photo, couldve done this differently by splitting the text on the left to a different container */
+    padding: 25px 25px;
+    width: 360px;
+  }
 }
