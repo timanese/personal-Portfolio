@@ -10,7 +10,64 @@ Antique brass: #CB997E
 Desert Sand: DDBEA9
 almost white: #F7FFF7
 
-*/
+/* Import google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Variable CSS
+----------------------------------*/
+:root {
+  --header-height: 3rem;
+
+  /* COLORS */
+  --primary-color: #a2d2ff;
+  --secondary-color: #bde0fe;
+  --third-color: #ffffff;
+  --fourth-color: #60656f;
+  --fifth-color: #131112;
+
+  /* FONT & TYPOGRAPHY */
+  /* default root level font size is 16 px */
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* FONT WEIGHT */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* MARGIN BOTTOMS  */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* Z INDEX  */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-model: 100;
+}
+
+/* Setting font size for larger devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
 
 /* Global style
 ----------------------------------*/
