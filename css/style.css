@@ -19,11 +19,22 @@ almost white: #F7FFF7
   --header-height: 3rem;
 
   /* COLORS */
-  --primary-color: #a2d2ff;
+  --hue-color: 209;
+  /* --primary-color: #a2d2ff;
   --secondary-color: #bde0fe;
   --third-color: #ffffff;
   --fourth-color: #60656f;
-  --fifth-color: #131112;
+  --fifth-color: #131112; */
+  --first-color: hsl((var(--hue-color)), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: white;
 
   /* FONT & TYPOGRAPHY */
   /* default root level font size is 16 px */
@@ -74,6 +85,7 @@ almost white: #F7FFF7
 /* always have this in your base css*/
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -82,12 +94,36 @@ html {
 }
 /* Always add margin 0 and padding 0 to body in the base css */
 body {
-  color: #202020;
+  /* color: #202020;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.5; */
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100;
+  height: auto;
 }
 img {
   width: 300px;
@@ -136,6 +172,62 @@ These are sibling combinator selectors */
 /* This is so that the last element section will not have a border */
 .divider > section:last-of-type {
   border-bottom: none;
+}
+
+/* REUSEABLE CSS CLASSES */
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section_title {
+  font-size: var(--h1-font-size);
+}
+
+.section_subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section_title,
+.section_subtitle {
+  text-align: center;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+/* NAVIGATION BAR  */
+
+.nav {
+  max-height: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
 }
 
 /* Profile
