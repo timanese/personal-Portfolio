@@ -25,7 +25,7 @@ almost white: #F7FFF7
   --third-color: #ffffff;
   --fourth-color: #60656f;
   --fifth-color: #131112; */
-  --first-color: hsl((var(--hue-color)), 69%, 61%);
+  --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -84,32 +84,24 @@ almost white: #F7FFF7
 ----------------------------------*/
 /* always have this in your base css*/
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   scroll-behavior: smooth;
 }
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 /* Always add margin 0 and padding 0 to body in the base css */
 body {
-  /* color: #202020;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  line-height: 1.5; */
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
 }
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -121,57 +113,10 @@ ul {
 a {
   text-decoration: none;
 }
+
 img {
-  max-width: 100;
+  max-width: 100%;
   height: auto;
-}
-img {
-  width: 300px;
-}
-a {
-  color: black;
-}
-a:hover {
-  text-decoration: none;
-}
-h1 {
-  font-size: 100px;
-  line-height: 1.2;
-}
-h2 {
-  font-size: 45px;
-}
-h1,
-h2 {
-  margin: 0;
-  font-family: "Zen Loop", cursive;
-  font-weight: 400; /*normal*/
-}
-.content-wrap {
-  max-width: 900px;
-  width: 85%;
-  margin: 0 auto;
-  padding: 60px 0; /* allowed for the background to fill up screen */
-}
-h3 {
-  margin: 0;
-}
-/*
-These are sibling combinator selectors */
-.item-details h3 + p {
-  font-style: italic;
-}
-.item-details h3 ~ p {
-  margin: 0;
-}
-/* This is so that everything with the class divider and all the children sections will have a bottom border */
-.divider > section {
-  border-bottom: 1px dashed #f7fff7;
-  padding: 25px 0; /* 25px on top and bottom and 0 on the left and right*/
-}
-/* This is so that the last element section will not have a border */
-.divider > section:last-of-type {
-  border-bottom: none;
 }
 
 /* REUSEABLE CSS CLASSES */
@@ -181,6 +126,7 @@ These are sibling combinator selectors */
 
 .section_title {
   font-size: var(--h1-font-size);
+  color: var(--title-color);
 }
 
 .section_subtitle {
@@ -245,17 +191,52 @@ These are sibling combinator selectors */
 @media screen and (max-width: 767px) {
   .nav__menu{
     position: fixed;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(177, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
-    transition: .3s;
+    transition: .41s;
   }
 }
 
+
+.nav__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__icon {
+  font-size: 1.2rem;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.nav__close:hover{
+  color: var(--first-color-alt);
+}
 /* Profile
 ----------------------------------*/
 header {
