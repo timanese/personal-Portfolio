@@ -11,223 +11,81 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
   <body>
-    <main>
-      <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <header class="header" id="header">
-        <nav class="nav container">
-          <a href="#" class="nav__logo">Tim Yang</a>
-          <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list grid">
-              <li class="nav_item">
-                <a href="#home" class="nav__link">
-                  <i class="uil uil-estate nav__icon"></i> Home
-                </a>
-              </li>
-              <li class="nav_item">
-                <a href="#about" class="nav__link">
-                  <i class="uil uil-user  nav__icon"></i> About
-                </a>
-              </li>
-              <li class="nav_item">
-                <a href="#skills" class="nav__link">
-                  <i class="uil uil-file-alt  nav__icon"></i> Skills
-                </a>
-              </li>
-              <li class="nav_item">
-                <a href="#education" class="nav__link">
-                  <i class="uil uil-brain  nav__icon"></i> Education
-                </a>
-              </li>
-              <li class="nav_item">
-                <a href="#projects" class="nav__link">
-                  <i class="uil uil-archive  nav__icon"></i> Projects
-                </a>
-              </li>
-              <li class="nav_item">
-                <a href="#contact" class="nav__link">
-                  <i class="uil uil-message  nav__icon"></i> Contact me
-                </a>
-              </li>
-            </ul>
-            <i class="uil uil-times nav__close  nav__icon" id="nav-close"></i>
-          </div>
-          <div class="nav__btn">
-            <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
-          </div>
-        </nav>
-          <!-- <div class="content-wrap">
-            <img src="images/headshot2021.jpg" alt="picture of Tim Yang" class = "headshot-item">
-            <h1>Tim Yang</h1>
-            <h2>Student / Software Developer</h2>
-            <p>My name is Tim yang and I am a student at The University of Central Florida majoring in Computer Science. I have a growing passion in full stack development, artifical intelligence, and software engineering. I have interned with Nothrop Grumman since 2019 as a software developer. My experiences at UCF and Northrop taught me real world skills and to be a self-motivated, hardworking team player.
-            Some technical skills im knowledgeable in are C programming, Java, Python, and front-end development.</p>
-            <p>Some of my hobbies are fitness, cooking, and sport. I also find myself exploring nature. </p>
-            </div> -->
-      </header>
-
-      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section class = "projects">
-          <div class="content-wrap divider">
-            <h2>Featured Projects</h2>
-            <p>View selected projects below. More information can be found at <a href="https://github.com/timanese">my github</a>.</p>
-
-            <!-- Copy the whole <section> block to add more projects. -->
-              <section class = "project-item">
-                <img src="images/mysh.png" alt="shell terminal photo">
-                <h3>Mysh - My Shell Program</h3>
-                <p>Shell program written in C called mysh that replaces the command line in Unix. Some implemented commands are movetodir, whereami, byebye. An assignment for a Operating Systems course.</p>
-                <a class = "btn" href="https://github.com/timanese/shell-program" target="_blank">View project / case study</a>
-              </section>
-            <section class = "project-item">
-              <img src="images/cprogramminglogo.png" alt="C programming language logo">
-              <h3>PL/0 Compiler</h3>
-              <p>This project consist of implementing a compiler for a programming language called pl/0.</p>
-              <a class = "btn" href="https://github.com/timanese" target="_blank">View project / case study</a>
-            </section>
-            <section class = "project-item">
-              <img src="images/htmlcss.png" alt="HTML and CSS language logo">
-              <h3>pool clicker</h3>
-              <p>A GUI that is created with java that counts the amount of people that want to go to the pool!</p>
-              <a class = "btn" href="https://github.com/timanese" target="_blank">View project / case study</a>
-            </section>
-            <section class = "project-item">
-              <img src="images/thumbnail-1.jpg" alt="description of image">
-              <h3>Interative diary</h3>
-              <p>Social media hybrid app where people can blog and share with others there content. It is compatible with IOS and android. </p>
-              <a class = "btn" href="https://github.com/timanese" target="_blank">View project / case study</a>
-            </section>
-          </div>
-      </section>
-      <!-- End of Project block. -->
-
-      <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class = "work-experience">
-          <div class="content-wrap item-details divider">
-            <h2>Work Experience</h2>
-
-            <!-- Copy this whole <section> block to add more jobs. -->
-              <section class="job-items">
-                <div class="job-details">
-                  <h3>Software UCF CWEP @ Lockheed Martin</h3>
-                  <img src="images/LM-logo.png" alt="Northrop Grumman logo">
-                  <p>University of Central Florida College Work Experience Program</p>
-                  <p>October 2021 - Present</p>
-                </div>
-                <div class="job-summary">
-                  <p>Part of the ATWS team working on senors </p>
-                  <p>Skills Used / Learned:</p>
-                  <ul>
-                    <li>C++</li>
-                    <li>Linux / Bash</li>
-                    <li>GitLab</li>
-                    <li>Team collaboration</li>
-                    <li>Interpretation of large code base</li>
-                  </ul>
-                </div>
-              </section>
-            <section class="job-items">
-              <div class="job-details">
-                <h3>Software Intern 2021</h3>
-                <img src="images/NGlogo.png" alt="Northrop Grumman logo">
-                <p>Northrop Grumman</p>
-                <p>May 2021 - August 2021</p>
-              </div>
-              <div class="job-summary">
-                <p>Worked on Wind River Simics with a team to implement Simics into the working production code base. Simics is a full-system simulator for complex hardware. Also motified python test scripts to allow compatibility with Simics targets. The original test scripts only tested on real hardware. 
-                </p>
-                <p>Skills Used / Learned:</p>
-                <ul>
-                  <li>Python</li>
-                  <li>Linux / Bash</li>
-                  <li>Git / bitbucket</li>
-                  <li>Debugging software</li>
-                  <li>Team collaboration</li>
-                  <li>Interpretation of large code base</li>
-                </ul>
-              </div>
-            </section>
-
-            <section class="job-items">
-              <div class="job-details">
-                <h3>Software Intern 2020</h3>
-                <img src="images/NGlogo.png" alt="Northrop Grumman logo">
-                <p>Northrop Grumman</p>
-                <p>May 2020 - June 2020</p>
-              </div>
-              <div class="job-summary">
-                <p>Worked on team to develop afront-end GUI of a mission planner for a web framework to send mission routes to a
-                  Webserver using HTML, CSS, JS, and Vue.js as the framework. Used agile software development to share, implement, and track team and individual workload </p>
-               <p>Skills Used / Learned:</p>
-               <ul>
-                 <li>HTML</li>
-                 <li>CSS</li>
-                 <li>Javascript</li>
-                 <li>Vue.js</li>
-                 <li>Agile software development model</li>
-               </ul>
-              </div>
-            </section>
-
-            <section class="job-items">
-              <div class="job-details">
-                <h3>Software Intern 2019</h3>
-                <img src="images/NGlogo.png" alt="Northrop Grumman logo">
-                <p>Northrop Grumman</p>
-                <p>May 2019 - July 2019</p>
-              </div>
-              <div class="job-summary">
-                <p>Worked with LabOps to create a system that organized and tracked the usage of hardware using Atlassian. Developed a Bash Script that automated home directory ownership on Linux virtual machines </p>
-                <p>Skills Used / Learned:</p>
-                <ul>
-                  <li>Linux / Bash</li>
-                  <li>Atlassian</li>
-                </ul>
-              </div>
-            </section>
-          </div>
-        <!-- End of Job block. -->
-      </section>
-
-      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section class = "education">
-          <div class="content-wrap item-details">
-            <h2>Education</h2>
-
-            <!-- Copy this whole <section> block to add more schools. -->
-            <section>
-              <img src="images/ucflogo.png" alt="ucf logo">
-              <h3>University Of Central Florida - Orlando, FL</h3>
-              <p>Bachelor of Science- BS, Computer Science</p>
-              <p>3.48 GPA</p>
-              <p>2019 - 2023</p>
-            </section>
-            <!-- End of School block. -->
-            <section>
-              <img src="images/efsc-logo.png" alt="efsc logo">
-              <h3>Eastern Florida State College- Palm Bay, FL</h3>
-              <p>Associate of Arts - AA, General Studies</p>
-              <p>3.65 GPA</p>
-              <p>2017 - 2019</p>
-              <p>Completed through dual enrollement in highschool</p>
-            </section>
-          </div>
-      </section>
-
-      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-      <footer>
-          <div class="content-wrap">
-            <h2>Let's Keep in Touch!</h2>
-
-            <!-- Social media and contact links. Add or remove any networks. -->
-            <ul class = "contact-list">
-              <li><a href="mailto:tyang098@gmail.com">tyang098@gmail.com</a></li>
-              <li><a href="http://yourwebsite.com" target="_blank">timyang.com</a></li>
-              <li><a href="https://github.com/timanese" target="_blank">Github</a></li>
-              <li><a href="https://www.linkedin.com/in/tim-yang-49258b18b/" target="_blank">LinkedIn</a></li>
-              <li><a href="https://ucf.joinhandshake.com/users/20624509" target="_blank">Handshake</a></li>
-            </ul>
+    <!-- ***********************  ABOUT / PROFILE  *********************** -->
+    <!-- ***********************  NAV BAR  *********************** -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Tim Yang</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav_item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user  nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt  nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#education" class="nav__link">
+                <i class="uil uil-brain  nav__icon"></i> Education
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#projects" class="nav__link">
+                <i class="uil uil-archive  nav__icon"></i> Projects
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message  nav__icon"></i> Contact me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close  nav__icon" id="nav-close"></i>
         </div>
-      </footer>
+        <div class="nav__btn">
+          <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
+        </div>
+      </nav>
+        <!-- <div class="content-wrap">
+          <img src="images/headshot2021.jpg" alt="picture of Tim Yang" class = "headshot-item">
+          <h1>Tim Yang</h1>
+          <h2>Student / Software Developer</h2>
+          <p>My name is Tim yang and I am a student at The University of Central Florida majoring in Computer Science. I have a growing passion in full stack development, artifical intelligence, and software engineering. I have interned with Nothrop Grumman since 2019 as a software developer. My experiences at UCF and Northrop taught me real world skills and to be a self-motivated, hardworking team player.
+          Some technical skills im knowledgeable in are C programming, Java, Python, and front-end development.</p>
+          <p>Some of my hobbies are fitness, cooking, and sport. I also find myself exploring nature. </p>
+          </div> -->
+    </header>
+
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a href="https://www.linkedin.com/in/tim-yang-49258b18b/" target="_blank" class="home__social-icon">
+                <i class="uil uil-linkedin"></i>
+              </a>
+
+              <a href="mailto:tyang098@gmail.com" target="_blank" class="home__social-icon">
+                <i class="uil uil-envelope"></i>
+              </a>
+
+              <a href="https://github.com/timanese?tab=repositories" target="_blank" class="home__social-icon">
+                <i class="uil uil-github"></i>
+              </a>
+              yo
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="/assets/js/main.js"></script>
   </body>
