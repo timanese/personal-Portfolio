@@ -386,3 +386,16 @@ img {
   display: flex;
   justify-content: center;
 }
+
+
+/* Skill section */
+.skills__container {
+  row-gap: 0;
+}
+
+.skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
